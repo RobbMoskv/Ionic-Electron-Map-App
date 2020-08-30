@@ -3,15 +3,35 @@
   <ion-menu contentId="map-content">
     <ion-header>
       <ion-toolbar>
+        <!-- Menu Title -->
         <ion-title>
           Saved Address
         </ion-title>
       </ion-toolbar>
     </ion-header>
+    <!-- Menu Content -->
     <ion-content>
       List of Addresses
     </ion-content>
   </ion-menu>
-  <!-- Content -->
-  <ion-content id="map-content"></ion-content>
+
+  <!-- Main -->
+  <ion-content id="map-content">
+    <ion-header>
+      <ion-toolbar>
+        <!-- Main Menu -->
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <!-- Main Title -->
+        <ion-title>Select Location</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <!-- Main content -->
+    <p>Will be replaced by a map</p>
+  </ion-content>
 </ion-split-pane>
