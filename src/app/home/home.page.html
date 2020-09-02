@@ -16,7 +16,7 @@
   </ion-menu>
 
   <!-- Main -->
-  <ion-content id="map-content">
+  <section class="ion-page" id="map-content">
     <ion-header>
       <ion-toolbar>
         <!-- Main Menu -->
@@ -32,6 +32,15 @@
       </ion-toolbar>
     </ion-header>
     <!-- Main content -->
-    <p>Will be replaced by a map</p>
-  </ion-content>
+    <ion-content>
+      <agm-map 
+      [latitude]="+selectedAddress.latitude"
+      [longitude]="+selectedAddress.longitude"
+      [zoom]="18"
+      [clickable]="true"
+      [showDefaultInfoWindow]="false"
+      [usePanning]="true">
+    </agm-map>
+    </ion-content>
+  </section>
 </ion-split-pane>
